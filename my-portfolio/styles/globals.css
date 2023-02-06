@@ -2,10 +2,26 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Set root font-size */
+html {
+  font-size: 62.5%; /* Default browser font-size is 16px, hence 62.5% is 10px */
+}
+
+body {
+  font-family: "Josefin Slab", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: black;
+  box-sizing: border-box;
 }
 
 a {
