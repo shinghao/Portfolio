@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   mode: "jit",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -16,10 +17,11 @@ module.exports = {
         "primary-text-dark": "rgb(75 85 99)",
         "primary-text-light": "#FFFFFF",
         "primary-bg-light": "#FFFFFF",
-        "primary-bg-dark": "#000000",
+        "primary-bg-dark": "rgb(75 85 99)",
       },
       fontSize: {
         "icon-button": ["3rem", "1"],
+        lg: ["1.6rem", "2.8rem"],
         xl: ["2.0rem", "2.8rem"],
         "2xl": ["2.4rem", "3.2rem"],
         "3xl": ["2.8rem", "3.6rem"],
@@ -35,7 +37,7 @@ module.exports = {
       },
       height: {
         "btn-primary": "5rem",
-        "nav-bar": "9rem",
+        "nav-bar": "8rem",
       },
       borderRadius: {
         "btn-primary": "2.5rem",
