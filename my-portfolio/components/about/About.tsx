@@ -24,7 +24,7 @@ export default function About() {
           <Image
             src="shing-memoji-laptop.png"
             alt="Avatar of boy using macbook"
-            className="rounded-full"
+            className="rounded-full text-center"
           />
         </div>
         <hr className="row-start-3 col-span-7 h-px my-16 bg-gray-200"></hr>
