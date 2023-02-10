@@ -7,14 +7,14 @@ export default function About() {
         <h2 className="col-span-6 text-5xl font-bold pb-16">
           Nice to meet you!
         </h2>
-        <p className="text-3xl col-span-7 pr-8">
+        <p className=" col-span-7 pr-8">
           Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with a
           passion for building impactful products. I love solving problems and
           learning new technologies. <br /> <br /> I am currently seeking
           internship opportunities in web and software development.&nbsp;
           <a
             href="mailto:sohshinghao@gmail.com"
-            className="bg-primary-blue font-bold underline text-primary-btn-blue"
+            className="bg-primary-blue underline font-semibold text-primary-btn-blue"
           >
             Contact Me!
           </a>
