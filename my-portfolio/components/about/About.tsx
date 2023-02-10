@@ -22,7 +22,7 @@ export default function About() {
         </p>
         <div className="col-start-8 row-start-1 row-span-3 self-center relative bg-gradient-to-b from-primary-btn-blue rounded-full w-[30rem] h-[30rem]">
           <Image
-            src="shing-memoji-laptop.PNG"
+            src="shing-memoji-laptop.png"
             alt="Avatar of boy using macbook"
             className="rounded-full"
           />
@@ -34,16 +34,16 @@ export default function About() {
           Technologies:
         </h3>
         <ul className="grid grid-cols-5 gap-16 max-w-max m-auto ">
-          <SkillCard src="icons8-html-5-96.PNG" text="HTML" />
-          <SkillCard src="icons8-css3-96.PNG" text="CSS" />
-          <SkillCard src="icons8-javascript-96.PNG" text="JavaScript" />
-          <SkillCard src="icons8-react-native-96.PNG" text="React" />
-          <SkillCard src="icons8-tailwindcss-96.PNG" text="Tailwindcss" />
-          <SkillCard src="icons8-c++-96.PNG" text="C++" />
-          <SkillCard src="icons8-python-96.PNG" text="Python" />
-          <SkillCard src="icons8-git-96.PNG" text="Git" />
-          <SkillCard src="icons8-unity-96.PNG" text="Unity" />
-          <SkillCard src="icons8-adobe-photoshop-96.PNG" text="Photoshop" />
+          <SkillCard src="icons8-html-5-96.png" text="HTML" />
+          <SkillCard src="icons8-css3-96.png" text="CSS" />
+          <SkillCard src="icons8-javascript-96.png" text="JavaScript" />
+          <SkillCard src="icons8-react-native-96.png" text="React" />
+          <SkillCard src="icons8-tailwindcss-96.png" text="Tailwindcss" />
+          <SkillCard src="icons8-c++-96.png" text="C++" />
+          <SkillCard src="icons8-python-96.png" text="Python" />
+          <SkillCard src="icons8-git-96.png" text="Git" />
+          <SkillCard src="icons8-unity-96.png" text="Unity" />
+          <SkillCard src="icons8-adobe-photoshop-96.png" text="Photoshop" />
         </ul>
       </div>
     </section>

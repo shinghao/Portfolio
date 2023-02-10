@@ -38,7 +38,7 @@ export default function Work() {
         </div>
         <div className="w-[30rem] h-[30rem] self-end">
           <Image
-            src="boy-using-hololens.PNG"
+            src="boy-using-hololens.png"
             alt="Avatar of boy using macbook"
             className="rounded-full"
           />
