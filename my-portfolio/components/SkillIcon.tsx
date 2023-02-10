@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface workSkillProps {
   skillName: string;
 }
@@ -52,7 +54,7 @@ export default function WorkSkill(prop: workSkillProps) {
 
   return (
     <li className={workSkillStyle}>
-      <img src={skillObject.src} className="w-24 " />
+      <Image src={skillObject.src} alt = "" className="w-24 " />
       <p className="text-xl">{skillObject.text}</p>
     </li>
   );

@@ -16,6 +16,7 @@ export default function SocialIconBtn(prop: IconBtnProps) {
         <a
           href={prop.link}
           target="_blank"
+          rel="noreferrer"
           className="text-icon-button 
           ease-in 
           duration-100

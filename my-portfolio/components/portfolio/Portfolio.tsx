@@ -26,6 +26,7 @@ export default function Portfolio() {
               heading={item["heading"]}
               subheading={item["subheading"]}
               skills={item["skills"]}
+              key={index}
             />
           );
         })}

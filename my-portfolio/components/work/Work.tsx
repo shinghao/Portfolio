@@ -1,5 +1,6 @@
 import SkillIcon from "../SkillIcon";
 import HighlightedText from "./HighlightedText";
+import Image from "next/image";
 
 export default function Work() {
   return (
@@ -36,7 +37,7 @@ export default function Work() {
           </ul>
         </div>
         <div className="w-[30rem] h-[30rem] self-end">
-          <img
+          <Image
             src="boy-using-hololens.PNG"
             alt="Avatar of boy using macbook"
             className="rounded-full"

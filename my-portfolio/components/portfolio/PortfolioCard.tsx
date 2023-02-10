@@ -1,4 +1,5 @@
 import SkillIcon from "../SkillIcon";
+import Image from "next/image";
 
 interface PortfolioCardProps {
   imgSrc: string;
@@ -15,7 +16,7 @@ export default function PortfolioCard(prop: PortfolioCardProps) {
       href={prop.link}
       className="shadow-skills-card dark:shadow-none relative group w-[68rem] h-[40rem] overflow-hidden rounded-3xl"
     >
-      <img
+      <Image
         className="rounded-t-3xl object-cover w-[68rem] h-[40rem] transform duration-700 backdrop-opacity-100"
         src={prop.imgSrc}
         alt={prop.imgAlt}
@@ -39,7 +40,7 @@ export default function PortfolioCard(prop: PortfolioCardProps) {
       target="_blank"
       className="shadow-skills-card rounded-3xl w-[60rem] relative group overflow-hidden"
     >
-      <img
+      <Image
         src="project-findr.png"
         alt="Image of findr website"
         className="rounded-t-3xl w-[60rem] group-hover:blur-[2px] transition-all duration-200 ease-out"

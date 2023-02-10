@@ -1,4 +1,5 @@
 import SkillCard from "@/components/about/SkillCard";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
           </a>
         </p>
         <div className="col-start-8 row-start-1 row-span-3 self-center relative bg-gradient-to-b from-primary-btn-blue rounded-full w-[30rem] h-[30rem]">
-          <img
+          <Image
             src="shing-memoji-laptop.PNG"
             alt="Avatar of boy using macbook"
             className="rounded-full"
