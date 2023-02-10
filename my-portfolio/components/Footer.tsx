@@ -15,7 +15,12 @@ export default function Footer() {
         />
         <SocialIconBtn link="Resume_SohShingHao.pdf" icon={FaFileAlt} />
       </ul>
-      <p className="text-xl pb-16">sohshinghao@gmail.com</p>
+      <a
+        href="mailto:sohshinghao@gmail.com"
+        className="text-xl pb-16 cursor-pointer hover:underline-offset-4 hover:underline decoration-1"
+      >
+        sohshinghao@gmail.com
+      </a>
       <p className="text-lg">Designed & Built by Soh Shing Hao</p>
     </footer>
   );
