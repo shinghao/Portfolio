@@ -21,10 +21,10 @@ export default function About() {
           </a>
         </p>
         <div className="col-start-8 row-start-1 row-span-3 self-center relative bg-gradient-to-b from-primary-btn-blue rounded-full w-[30rem] h-[30rem]">
-          <Image
-            src="shing-memoji-laptop.png"
+          <img
+            src="boy-using-hololens.png"
             alt="Avatar of boy using macbook"
-            className="rounded-full text-center"
+            className="rounded-full text-center w-32"
           />
         </div>
         <hr className="row-start-3 col-span-7 h-px my-16 bg-gray-200"></hr>

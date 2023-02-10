@@ -54,7 +54,7 @@ export default function WorkSkill(prop: workSkillProps) {
 
   return (
     <li className={workSkillStyle}>
-      <Image src={skillObject.src} alt="" className="w-24 " />
+      <img src={skillObject.src} alt="" className="w-24 " />
       <p className="text-xl">{skillObject.text}</p>
     </li>
   );

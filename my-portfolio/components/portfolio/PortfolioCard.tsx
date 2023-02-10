@@ -16,7 +16,7 @@ export default function PortfolioCard(prop: PortfolioCardProps) {
       href={prop.link}
       className="shadow-skills-card dark:shadow-none relative group w-[68rem] h-[40rem] overflow-hidden rounded-3xl"
     >
-      <Image
+      <img
         className="rounded-t-3xl object-cover w-[68rem] h-[40rem] transform duration-700 backdrop-opacity-100"
         src={prop.imgSrc}
         alt={prop.imgAlt}
