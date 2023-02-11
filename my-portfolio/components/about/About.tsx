@@ -3,12 +3,27 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="min-h-screen px-[12.8rem] py-40" id="about">
-      <div className="grid grid-cols-10 gap-x-8">
-        <h2 className="col-span-6 text-5xl font-bold pb-16">
+    <section
+      className="min-h-screen px-16 pb-40 lg:px-[12.8rem] lg:py-40"
+      id="about"
+    >
+      <div className="flex flex-col gap-12 lg:grid lg:grid-cols-10 lg:gap-x-8">
+        <h2 className="col-span-6 text-4xl lg:text-5xl font-bold lg:pb-16">
           Nice to meet you!
         </h2>
-        <p className=" col-span-7 pr-8">
+        <div
+          className="w-60 h-60 self-center relative bg-gradient-to-b from-primary-btn-blue rounded-full 
+          flex justify-center
+          lg:col-start-8 lg:row-start-1 lg:row-span-3 lg:w-[30rem] lg:h-[30rem]
+        "
+        >
+          <img
+            src="https://i.ibb.co/kxBMV3G/shing-memoji-laptop.png"
+            alt="Avatar of boy using macbook"
+            className="rounded-full h-60 lg:text-lg lg:w-[22rem]"
+          />
+        </div>
+        <p className=" lg:col-span-7 lg:pr-8">
           Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with a
           passion for building impactful products. I love solving problems and
           learning new technologies. <br /> <br /> I am currently seeking
@@ -20,20 +35,14 @@ export default function About() {
             Contact Me!
           </a>
         </p>
-        <div className="col-start-8 row-start-1 row-span-3 self-center relative bg-gradient-to-b from-primary-btn-blue rounded-full w-[30rem] h-[30rem] flex justify-center items-center align-middle">
-          <img
-            src="https://i.ibb.co/kxBMV3G/shing-memoji-laptop.png"
-            alt="Avatar of boy using macbook"
-            className="rounded-full text-center text-lg w-[22rem]"
-          />
-        </div>
-        <hr className="row-start-3 col-span-7 h-px my-16 bg-gray-200"></hr>
+
+        <hr className=" h-px my-4 lg:my-16 bg-gray-200 lg:row-start-3 lg:col-span-7"></hr>
       </div>
       <div>
-        <h3 className="text-4xl mt-4 mb-16 text-center font-bold">
+        <h3 className="text-3xl lg:text-4xl m-8 lg:mb-16 text-center font-bold">
           Technologies:
         </h3>
-        <ul className="grid grid-cols-5 gap-16 max-w-max m-auto ">
+        <ul className="grid grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-16 max-w-max m-auto ">
           <SkillCard src="icons8-html-5-96.png" text="HTML" />
           <SkillCard src="icons8-css3-96.png" text="CSS" />
           <SkillCard src="icons8-javascript-96.png" text="JavaScript" />

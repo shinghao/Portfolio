@@ -32,12 +32,17 @@ module.exports = {
         "8xl": ["9.6rem", "1"],
       },
       width: {
+        "btn-s": "12rem",
         "btn-m": "14rem",
         "btn-l": "20rem",
       },
       height: {
-        "btn-primary": "5rem",
+        "btn-primary-s": "4rem",
+        "btn-primary-m": "5rem",
         "nav-bar": "8rem",
+      },
+      padding: {
+        hero: "8rem",
       },
       borderRadius: {
         "btn-primary": "2.5rem",

@@ -14,23 +14,23 @@ export default function PortfolioCard(prop: PortfolioCardProps) {
   return (
     <a
       href={prop.link}
-      className="shadow-skills-card dark:shadow-none relative group w-[68rem] h-[40rem] overflow-hidden rounded-3xl"
+      className="shadow-skills-card dark:shadow-none relative group lg:w-[68rem] lg:h-[40rem] overflow-hidden rounded-3xl"
     >
       <img
-        className="rounded-t-3xl object-cover w-[68rem] h-[40rem] transform duration-700 backdrop-opacity-100"
+        className="rounded-t-3xl object-cover lg:w-[68rem] lg:h-[40rem] transform duration-700 backdrop-opacity-100"
         src={prop.imgSrc}
         alt={prop.imgAlt}
       />
       <div className="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
       <div className="absolute bg-black/60 from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
         <div className="absolute w-full flex">
-          <h3 className="capitalize text-3xl font-bold text-3xlshadow-2xl text-white mt-12 px-20">
+          <h3 className="capitalize lg:text-3xl font-bold shadow-2xl text-white mt-6 lg:mt-12 px-8 lg:px-20">
             {prop.heading}
           </h3>
         </div>
 
-        <div className="px-20 py-16 absolute w-full flex flex-col justify-end mt-20 text-primary-text-light opacity-0 group-hover:opacity-100 duration-100 ease-in-out">
-          <p className="leading-relaxed pb-4">{prop.subheading}</p>
+        <div className=" px-9 lg:px-20 lg:py-16 absolute w-full flex flex-col justify-end mt-16 lg:mt-20 text-primary-text-light opacity-0 group-hover:opacity-100 duration-100 ease-in-out">
+          <p className="leading-relaxed lg:pb-4">{prop.subheading}</p>
           <SkillIcon skillName="react" />
         </div>
       </div>

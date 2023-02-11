@@ -18,7 +18,7 @@ export default function NavbarPriBtn() {
       <a href="mailto:sohshinghao@gmail.com">
         <button
           className="w-btn-m 
-    h-btn-primary 
+    h-btn-primary-m 
     rounded-btn-primary 
     text-primary-text-light 
     font-bold 

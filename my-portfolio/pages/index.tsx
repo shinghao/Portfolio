@@ -6,7 +6,6 @@ import WorkSection from "@/components/work/Work";
 import PortfolioSection from "@/components/portfolio/Portfolio";
 import Footer from "@/components/Footer";
 import { useState } from "react";
-import { FaCloudSun } from "react-icons/fa";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);

@@ -4,16 +4,18 @@ import Image from "next/image";
 
 export default function Work() {
   return (
-    <section className="min-h-screen px-[12.8rem] py-40" id="work">
-      <h2 className="text-5xl font-bold pb-16">Work Experience</h2>
-      <div className="grid grid-cols-10 gap-8">
+    <section className="min-h-screen px-16 lg:px-[12.8rem] lg:py-40" id="work">
+      <h2 className="text-4xl lg:text-5xl font-bold pb-6 lg:pb-16">
+        Work Experience
+      </h2>
+      <div className="lg:grid lg:grid-cols-10 lg:gap-8">
         <div className="col-span-7">
-          <h3 className="text-4xl font-bold">Serl.io</h3>
-          <div className="flex justify-between">
-            <p className="text-4xl">Software Developer (Contract)</p>
-            <p className="text-xl">May 22 - Nov 22</p>
+          <h3 className="text-2xl lg:text-4xl font-bold">Serl.io</h3>
+          <div className="flex flex-col lg:flex-row lg:justify-between">
+            <p className="text-xl lg:text-3xl">Software Developer (Contract)</p>
+            <p className="lg:text-xl">May 22 - Nov 22</p>
           </div>
-          <ul className="my-8 list-disc mx-12">
+          <ul className="my-8 list-disc mx-6 lg:mx-12 ">
             <li>
               Developed multiple end-to-end
               <HighlightedText text="Mixed Reality" />
@@ -36,7 +38,7 @@ export default function Work() {
             </li>
           </ul>
         </div>
-        <div className="w-[30rem] h-[30rem] self-end">
+        <div className="w-60 h-60 m-auto mb-6 lg:mb-0 lg:w-[30rem] lg:h-[30rem] lg:self-end">
           <img
             src="boy-using-hololens.png"
             alt="Avatar of boy using macbook"
@@ -44,7 +46,7 @@ export default function Work() {
           />
         </div>
       </div>
-      <ul className="grid grid-flow-col max-w-max gap-12 dark:bg-gray-400 p-4 rounded-xl">
+      <ul className="grid grid-flow-col max-w-max gap-6 lg:gap-12 dark:bg-gray-400 p-4 rounded-xl">
         <SkillIcon skillName="c#" />
         <SkillIcon skillName="unity" />
         <SkillIcon skillName="javascript" />

@@ -14,8 +14,13 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="min-h-screen px-[12.8rem] py-40" id="portfolio">
-      <h2 className="text-5xl font-bold pb-16">Project Highlights</h2>
+    <section
+      className="min-h-screen px-16 lg:px-[12.8rem] lg:py-40"
+      id="portfolio"
+    >
+      <h2 className="text-4xl lg:text-5xl font-bold pb-12 lg:pb-16">
+        Project Highlights
+      </h2>
       <div className="grid justify-items-center gap-20">
         {portfolioItems.map((item, index) => {
           return (
