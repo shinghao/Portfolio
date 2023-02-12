@@ -38,6 +38,7 @@ function Navbar(prop: NavbarProps) {
               ></FaCloudSun>
             ) : (
               <FaCloudMoon
+                className="text-icon-button "
                 onClick={() => prop.handleDarkModeSwitch()}
               ></FaCloudMoon>
             )}
