@@ -6,6 +6,7 @@ import WorkSection from "@/components/work/Work";
 import PortfolioSection from "@/components/portfolio/Portfolio";
 import Footer from "@/components/Footer";
 import { useState } from "react";
+import "animate.css/animate.min.css";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,6 +22,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <link
+          rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Josefin+Slab"
         ></link>
       </Head>
@@ -29,7 +35,6 @@ export default function Home() {
           handleDarkModeSwitch={handleDarkModeSwitch}
           darkMode={darkMode}
         />
-
         <HeroSection />
         <AboutSection />
         <WorkSection />

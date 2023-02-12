@@ -1,6 +1,6 @@
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import PortfolioCard from "./PortfolioCard";
 
-PortfolioCard;
 export default function Portfolio() {
   const portfolioItems = [
     {
@@ -37,7 +37,9 @@ export default function Portfolio() {
   return (
     <section className=" m-auto w-10/12 5xl:w-9/12 pt-20 " id="portfolio">
       <h2 className="font-bold text-3xl md:text-4xl mb-2 lg:text-5xl text-center">
-        Project Highlights
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+          Project Highlights
+        </AnimationOnScroll>
       </h2>
       <div
         className="pt-8 lg:pt-12 pb-28  bg-gradient-to-r bg-[length:1px] bg-no-repeat bg-center
