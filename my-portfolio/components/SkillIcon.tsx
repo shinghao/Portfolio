@@ -43,7 +43,6 @@ const skills = [
 ];
 
 export default function WorkSkill(prop: workSkillProps) {
-  const workSkillStyle = `flex flex-col max-w-max items-center `;
   const skillObject = skills.find(
     (skill) => skill.skillName === prop.skillName
   );
@@ -53,9 +52,9 @@ export default function WorkSkill(prop: workSkillProps) {
   }
 
   return (
-    <li className={workSkillStyle}>
-      <img src={skillObject.src} alt="" className="w-16 lg:w-24 " />
-      <p className="text-sm lg:text-xl">{skillObject.text}</p>
+    <li className="flex flex-col max-w-max items-center justify-self-center">
+      <img src={skillObject.src} alt="" className="w-12 lg:w-16 " />
+      {/* <p className="text-xs lg:text-xl ">{skillObject.text}</p> */}
     </li>
   );
 }

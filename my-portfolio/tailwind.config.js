@@ -19,9 +19,23 @@ module.exports = {
         "primary-bg-light": "#FFFFFF",
         "primary-bg-dark": "rgb(75 85 99)",
       },
+      screens: {
+        xxm: "375px",
+        xm: "425px",
+        xsm: "540px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
+        "3xl": "1536px",
+        "5xl": "1800px",
+        "6xl": "1920px",
+        "4k": "2560px",
+      },
       fontSize: {
-        "icon-button": ["3rem", "1"],
-        lg: ["1.6rem", "2.8rem"],
+        "icon-button": ["1.9rem", "1"],
+        /* lg: ["1.6rem", "2.8rem"],
         xl: ["2.0rem", "2.8rem"],
         "2xl": ["2.4rem", "3.2rem"],
         "3xl": ["2.8rem", "3.6rem"],
@@ -29,7 +43,7 @@ module.exports = {
         "5xl": ["4.8rem", "1"],
         "6xl": ["6.4rem", "1"],
         "7xl": ["7.2rem", "1"],
-        "8xl": ["9.6rem", "1"],
+        "8xl": ["9.6rem", "1"], */
       },
       width: {
         "btn-s": "12rem",
@@ -39,10 +53,10 @@ module.exports = {
       height: {
         "btn-primary-s": "4rem",
         "btn-primary-m": "5rem",
-        "nav-bar": "8rem",
+        "nav-bar": "5rem",
       },
       padding: {
-        hero: "8rem",
+        hero: "5rem",
       },
       borderRadius: {
         "btn-primary": "2.5rem",

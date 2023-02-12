@@ -8,16 +8,16 @@ export default function NavbarLinkBtn(prop: HeaderLinkProps) {
   const navbarLinkBtn = `
   cursor-pointer 
   capitalize 
-  px-4 
+  px-3 
   relative 
   ease-in 
   duration-300
   after:block after:content-[''] 
   after:absolute 
-  after:h-1 
+  after:h-0.5 
   after:w-0 
   after:bg-primary-btn-blue 
-  after:-bottom-3 
+  after:-bottom-2 
   after:transition-all 
   after:ease-in 
   duration-300 

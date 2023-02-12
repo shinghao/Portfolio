@@ -15,10 +15,10 @@ export default function Portfolio() {
 
   return (
     <section
-      className="min-h-screen px-16 lg:px-[12.8rem] lg:py-40"
+      className="min-h-screen m-auto w-10/12 5xl:w-9/12 py-20"
       id="portfolio"
     >
-      <h2 className="text-4xl lg:text-5xl font-bold pb-12 lg:pb-16">
+      <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl w-max mb-8 lg:mb-12">
         Project Highlights
       </h2>
       <div className="grid justify-items-center gap-20">
