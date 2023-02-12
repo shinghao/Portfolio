@@ -6,10 +6,10 @@ export default function Hero() {
         gap-3 xm:gap-4 sm:gap-5 lg:gap-7 "
         id="hero"
       >
-        <p className="pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-7xl font-bold">
+        <p className="pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold">
           Hi, I&apos;m
         </p>
-        <h2 className="text-4xl xm:text-5xl sm:text-6xl lg:text-7xl font-bold">
+        <h2 className="text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold">
           Shing Hao
         </h2>
         <h3 className="text-xl xm:text-2xl sm:text-3xl">

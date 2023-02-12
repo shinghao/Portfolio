@@ -1,4 +1,5 @@
 import SkillCard from "@/components/about/SkillCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function About() {
   return (
