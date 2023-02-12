@@ -45,10 +45,12 @@ module.exports = {
       height: {
         "btn-primary-s": "4rem",
         "btn-primary-m": "5rem",
+        "nav-bar-s": "4rem",
         "nav-bar": "5rem",
       },
       padding: {
         hero: "5rem",
+        "hero-s": "4rem",
       },
       borderRadius: {
         "btn-primary": "2.5rem",

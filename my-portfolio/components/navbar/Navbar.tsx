@@ -16,7 +16,7 @@ interface NavbarProps {
 function Navbar(prop: NavbarProps) {
   return (
     <nav
-      className="drop-shadow h-nav-bar fixed z-10  w-screen bg-primary-bg-light dark:bg-primary-bg-dark
+      className="drop-shadow h-nav-bar-s sm:h-nav-bar fixed z-10  w-screen bg-primary-bg-light dark:bg-primary-bg-dark
     animate__animated animate__fadeInDownBig animate__delay-5s"
     >
       <div className="grid grid-flow-col lg:auto-cols-fr items-center h-full w-11/12 m-auto ">

@@ -7,7 +7,7 @@ export default function Hero() {
         id="hero"
       >
         <p
-          className="pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold
+          className="pt-hero-s sm:pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold
           animate__animated animate__slow animate__fadeIn"
         >
           Hi, I&apos;m
