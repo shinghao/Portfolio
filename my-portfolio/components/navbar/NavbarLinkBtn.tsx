@@ -5,26 +5,6 @@ interface HeaderLinkProps {
 }
 
 export default function NavbarLinkBtn(prop: HeaderLinkProps) {
-  const navbarLinkBtn = `
-  cursor-pointer 
-  capitalize 
-  px-3 
-  relative 
-  ease-in 
-  duration-300
-  after:block after:content-[''] 
-  after:absolute 
-  after:h-0.5 
-  after:w-0 
-  after:bg-primary-btn-blue 
-  after:-bottom-2 
-  after:transition-all 
-  after:ease-in 
-  duration-300 
-  hover:after:w-full 
-  hover:text-primary-btn-blue  
-  `;
-
   return (
     <li>
       <Link
@@ -33,7 +13,23 @@ export default function NavbarLinkBtn(prop: HeaderLinkProps) {
         offset={-20}
         smooth={true}
         duration={500}
-        className={navbarLinkBtn}
+        className="cursor-pointer 
+        capitalize 
+        px-3 
+        relative 
+        ease-in 
+        after:block after:content-[''] 
+        after:absolute 
+        after:h-0.5 
+        after:w-0 
+        after:bg-primary-btn-blue 
+        after:-bottom-2 
+        after:transition-all 
+        after:ease-in 
+        duration-300 
+        hover:after:w-full 
+        hover:text-primary-btn-blue
+        "
         activeClass="active"
       >
         {prop.linkTo}

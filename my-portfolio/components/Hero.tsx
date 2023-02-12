@@ -6,20 +6,30 @@ export default function Hero() {
         gap-3 xm:gap-4 sm:gap-5 lg:gap-7 "
         id="hero"
       >
-        <p className="pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold">
+        <p
+          className="pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold
+          animate__animated animate__slow animate__fadeIn"
+        >
           Hi, I&apos;m
         </p>
-        <h2 className="text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold">
+        <h2
+          className="text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold
+        animate__animated animate__fadeIn animate__slow animate__delay-1s"
+        >
           Shing Hao
         </h2>
-        <h3 className="text-xl xm:text-2xl sm:text-3xl">
+        <h3
+          className="text-xl xm:text-2xl sm:text-3xl
+        animate__animated animate__fadeIn animate__slow animate__delay-3s"
+        >
           Web // Software Developer
         </h3>
         <a href="mailto:sohshinghao@gmail.com">
           <button
             className="w-32 h-11 xm:w-36 xm:h-12 md:w-48 md:h-14 
+            animate__animated animate__fadeInUp animate__delay-5s
             lg:text-2xl
-            ease-in duration-300
+            ease-in duration-300 
                     hover:from-teal-500 hover:to-primary-btn-blue
             rounded-btn-primary text-primary-text-light bg-gradient-to-r from-primary-btn-blue to-teal-500 font-bold"
           >
