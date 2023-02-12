@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Work() {
   return (
     <section className="m-auto w-10/12 5xl:w-9/12 py-20" id="work">
-      <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl w-max">
+      <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center">
         Work Experience
       </h2>
       <div className="lg:grid auto-rows-min lg:mt-8">

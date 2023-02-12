@@ -1,5 +1,4 @@
 import SkillCard from "@/components/about/SkillCard";
-import Image from "next/image";
 
 export default function About() {
   return (
@@ -12,7 +11,7 @@ export default function About() {
                   gap-y-8 xm:gap-y-10 sm:gap-y-12 md:gap-y-12 lg:gap-y-0
                   lg:grid lg:grid-cols-3"
       >
-        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl w-max">
+        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center lg:col-span-2 justify-self-center">
           Nice to meet you!
         </h2>
         <div
