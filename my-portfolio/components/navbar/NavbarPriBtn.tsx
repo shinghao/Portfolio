@@ -9,7 +9,9 @@ export default function NavbarPriBtn() {
                     text-primary-text-light font-bold 
                     bg-gradient-to-r from-primary-btn-blue to-teal-500
                     ease-in transition-colors duration-700
-                    hover:from-teal-500 hover:to-primary-btn-blue"
+                    hover:from-teal-500 hover:to-primary-btn-blue
+                    hidden
+                    xsm:block"
         >
           Contact
         </button>

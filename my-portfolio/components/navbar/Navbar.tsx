@@ -15,8 +15,8 @@ interface NavbarProps {
 
 function Navbar(prop: NavbarProps) {
   return (
-    <nav className="drop-shadow h-nav-bar md:px-4 lg:px-12 xl:px-16 fixed z-10  w-screen bg-primary-bg-light dark:bg-primary-bg-dark">
-      <div className="grid grid-flow-col lg:auto-cols-fr items-center min-h-full">
+    <nav className="drop-shadow h-nav-bar  fixed z-10  w-screen bg-primary-bg-light dark:bg-primary-bg-dark">
+      <div className="grid grid-flow-col lg:auto-cols-fr items-center min-h-full w-11/12 m-auto">
         <div className="flex flex-row gap-2 items-center">
           <Link
             to="hero"
@@ -27,7 +27,7 @@ function Navbar(prop: NavbarProps) {
           >
             <h1>Shing Hao</h1>
           </Link>
-          <button className="p-3 lg:m-3 max-w-max border-2 rounded-xl hover:border-gray-200 dark:hover:border-gray-400 border-transparent hover:bg-gray-100 dark:hover:bg-gray-500">
+          <button className="xxm:p-3 lg:m-3 max-w-max border-2 rounded-xl hover:border-gray-200 dark:hover:border-gray-400 border-transparent hover:bg-gray-100 dark:hover:bg-gray-500">
             {prop.darkMode ? (
               <FaCloudSun
                 className="text-yellow-500 text-icon-button "
@@ -41,7 +41,7 @@ function Navbar(prop: NavbarProps) {
           </button>
         </div>
 
-        <ul className="m-auto flex justify-around w-full">
+        <ul className="m-auto justify-around w-full hidden navbar:flex">
           <NavbarLinkBtn linkTo="about" />
           <NavbarLinkBtn linkTo="work" />
           <NavbarLinkBtn linkTo="portfolio" />
