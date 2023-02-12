@@ -48,7 +48,7 @@ export default function About() {
           </a>
         </p>
 
-        <hr className="bg-gray-200 h-px lg:col-span-2 lg:my-4"></hr>
+        <hr className="border-gray-300 dark:border-gray-500 h-px lg:col-span-2 lg:my-4"></hr>
       </div>
       <div>
         <h3 className="text-2xl md:text-3xl lg:text-4xl m-12 text-center font-bold">

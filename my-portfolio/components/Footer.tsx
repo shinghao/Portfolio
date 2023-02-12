@@ -6,7 +6,7 @@ import SocialIconBtn from "./SocialIconBtn";
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center pb-8">
-      <hr className="h-px my-8 bg-gray-200 w-5/6 " />
+      <hr className="h-px mb-8 w-5/6 border-gray-300 dark:border-gray-500" />
       <ul className="flex flex-row gap-8 pb-4 ">
         <SocialIconBtn link="https://github.com/shinghao" icon={FaGithub} />
         <SocialIconBtn

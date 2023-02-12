@@ -35,17 +35,17 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="m-auto w-10/12 5xl:w-9/12 pt-20 " id="portfolio">
+    <section className=" m-auto w-10/12 5xl:w-9/12 pt-20 " id="portfolio">
       <h2 className="font-bold text-3xl md:text-4xl mb-2 lg:text-5xl text-center">
         Project Highlights
       </h2>
       <div
-        className="pt-8 lg:pt-12 pb-20  bg-gradient-to-r bg-[length:1px] bg-no-repeat bg-center
-      from-gray-200 to-gray-200 
+        className="pt-8 lg:pt-12 pb-28  bg-gradient-to-r bg-[length:1px] bg-no-repeat bg-center
+      from-gray-300 to-gray-300 
       dark:from-gray-500 dark:to-gray-500 "
       >
         <div
-          className="grid justify-items-center gap-20
+          className="grid justify-items-center gap-20 lg:gap-32 2xl:gap-36
       "
         >
           {portfolioItems.map((item, index) => {
