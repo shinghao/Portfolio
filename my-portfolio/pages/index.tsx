@@ -5,14 +5,34 @@ import AboutSection from "@/components/about/About";
 import WorkSection from "@/components/work/Work";
 import PortfolioSection from "@/components/portfolio/Portfolio";
 import Footer from "@/components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "animate.css/animate.min.css";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 export default function Home() {
+  const LOADTIME = 3000;
+
   const [darkMode, setDarkMode] = useState(false);
+  const [showPage, setShowPage] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => {
+      setShowPage(true);
+    }, LOADTIME);
+  });
+
   const handleDarkModeSwitch = () => {
     setDarkMode(!darkMode);
   };
+
+  const loader = () => {
+    return (
+      <div className="h-screen w-screen bg-primary-bg-dark flex justify-center items-center">
+        <PacmanLoader color="#36d7b7" />
+      </div>
+    );
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -30,17 +50,23 @@ export default function Home() {
           href="https://fonts.googleapis.com/css?family=Josefin+Slab"
         ></link>
       </Head>
-      <main className="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
-        <Navbar
-          handleDarkModeSwitch={handleDarkModeSwitch}
-          darkMode={darkMode}
-        />
-        <HeroSection />
-        <AboutSection />
-        <WorkSection />
-        <PortfolioSection />
-        <Footer />
-      </main>
+      {!showPage && loader()}
+      {showPage && (
+        <main
+          className="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light
+         "
+        >
+          <Navbar
+            handleDarkModeSwitch={handleDarkModeSwitch}
+            darkMode={darkMode}
+          />
+          <HeroSection />
+          <AboutSection />
+          <WorkSection />
+          <PortfolioSection />
+          <Footer />
+        </main>
+      )}
     </div>
   );
 }
