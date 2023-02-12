@@ -19,6 +19,8 @@ export default function Hero() {
           <button
             className="w-32 h-11 xm:w-36 xm:h-12 md:w-48 md:h-14 
             lg:text-2xl
+            ease-in duration-300
+                    hover:from-teal-500 hover:to-primary-btn-blue
             rounded-btn-primary text-primary-text-light bg-gradient-to-r from-primary-btn-blue to-teal-500 font-bold"
           >
             Let&apos;s Chat!
