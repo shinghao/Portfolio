@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Work() {
   return (
-    <section className="min-h-screen m-auto w-10/12 5xl:w-9/12 py-20" id="work">
+    <section className="m-auto w-10/12 5xl:w-9/12 py-20" id="work">
       <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl w-max">
         Work Experience
       </h2>
@@ -59,7 +59,7 @@ export default function Work() {
       <ul
         className="dark:bg-gray-400 rounded-xl grid grid-flow-col
                       max-w-md lg:max-w-fit
-                      p-4 my-4
+                      p-4 my-4 xl:my-0
                       gap-2 lg:gap-4 "
       >
         <SkillIcon skillName="c#" />

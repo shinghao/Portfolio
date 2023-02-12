@@ -24,7 +24,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css?family=Josefin+Slab"
         ></link>
       </Head>
-      <main className="primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
+      <main className="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
         <Navbar
           handleDarkModeSwitch={handleDarkModeSwitch}
           darkMode={darkMode}

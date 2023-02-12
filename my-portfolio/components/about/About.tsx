@@ -10,8 +10,7 @@ export default function About() {
       <div
         className="flex flex-col
                   gap-y-8 xm:gap-y-10 sm:gap-y-12 md:gap-y-12 lg:gap-y-0
-                  lg:grid lg:grid-cols-3 
-                  6xl:"
+                  lg:grid lg:grid-cols-3"
       >
         <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl w-max">
           Nice to meet you!
