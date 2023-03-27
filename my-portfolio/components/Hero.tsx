@@ -20,16 +20,16 @@ export default function Hero() {
         </h2>
         <h3
           className="text-xl xm:text-2xl sm:text-3xl
-        animate__animated animate__fadeIn animate__slow animate__delay-3s"
+        animate__animated animate__fadeIn animate__slow animate__delay-2s"
         >
           Web // Software Developer
         </h3>
         <a href="mailto:sohshinghao@gmail.com">
           <button
             className="w-32 h-11 xm:w-36 xm:h-12 md:w-48 md:h-14 
-            animate__animated animate__fadeInUp animate__delay-5s
+            animate__animated animate__fadeInUp animate__delay-3s
             lg:text-2xl
-            ease-in duration-300 
+            ease-in duration-100 
                     hover:from-teal-500 hover:to-primary-btn-blue
             rounded-btn-primary text-primary-text-light bg-gradient-to-r from-primary-btn-blue to-teal-500 font-bold"
           >

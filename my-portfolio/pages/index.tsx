@@ -12,8 +12,8 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 export default function Home() {
   const LOADTIME = 3000;
 
-  const [darkMode, setDarkMode] = useState(false);
-  const [showPage, setShowPage] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+  const [showPage, setShowPage] = useState(true);
 
   useEffect(() => {
     setInterval(() => {
