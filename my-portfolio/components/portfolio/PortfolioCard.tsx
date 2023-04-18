@@ -58,7 +58,7 @@ function RenderImage(prop: PortfolioCardProps) {
               {prop.subheading}
             </p>
             {prop.skills.length > 0 && (
-              <div className="w-10 xm:w-max flex gap-4 bg-gray-400 rounded-xl p-2 place-content-center place-items-center">
+              <div className="w-max flex gap-4 bg-gray-400 rounded-xl p-2 place-content-center place-items-center">
                 {prop.skills.map((item, index) => {
                   return <SkillIcon skillName={item} key={index} />;
                 })}

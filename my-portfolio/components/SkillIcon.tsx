@@ -73,7 +73,7 @@ export default function WorkSkill(prop: workSkillProps) {
 
   return (
     <li className="flex flex-col max-w-max items-center justify-self-center">
-      <img src={skillObject.src} alt="" className="w-10 sm:w-12 " />
+      <img src={skillObject.src} alt="" className="w-8 sm:w-12 " />
       {/* <p className="text-xs lg:text-xl ">{skillObject.text}</p> */}
     </li>
   );
