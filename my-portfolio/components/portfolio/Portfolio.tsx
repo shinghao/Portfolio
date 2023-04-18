@@ -4,11 +4,22 @@ import PortfolioCard from "./PortfolioCard";
 export default function Portfolio() {
   const portfolioItems = [
     {
+      imgSrc: "project-where-to-binge.png",
+      imgAlt: "Image of where-to-binge website",
+      link: "https://where-to-binge.vercel.app/",
+      heading: "Where to Binge (WIP)",
+      subheading:
+        "Discover the best streaming options for your favorite content!",
+      skills: ["react", "next", "tailwind", "django", "postgresql", "aws"],
+      isVideo: false,
+    },
+    {
       imgSrc: "project-findr.png",
       imgAlt: "Image of findr website",
       link: "https://github.com/shinghao/findR",
       heading: "Price Comparison Shopping App",
-      subheading: "Front-End Developer",
+      subheading:
+        "Compare prices of searched item across various ecommerce platforms",
       skills: ["react"],
       isVideo: false,
     },
@@ -19,7 +30,7 @@ export default function Portfolio() {
       heading: "Lion City",
       subheading:
         "Designed & developed a city-building game to increase awareness on the Total Defense pillars with Unity (5-man team) ",
-      skills: [],
+      skills: ["unity", "c#"],
       isVideo: false,
     },
     {
@@ -29,7 +40,7 @@ export default function Portfolio() {
       heading: "Breakout Monkey",
       subheading:
         "Designed, developed & published a mobile endless runner game for android with Unity (3-man team) ",
-      skills: [],
+      skills: ["unity", "c#"],
       isVideo: false,
     },
   ];

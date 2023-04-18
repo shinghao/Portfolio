@@ -30,7 +30,7 @@ function RenderImage(prop: PortfolioCardProps) {
           alt={prop.imgAlt}
         />
         <div className="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
-        <div className="absolute bg-black/60 from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
+        <div className="absolute bg-black/80 from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
           <div className="absolute w-full flex">
             <h3
               className="capitalize  font-bold shadow-2xl text-white 
@@ -57,11 +57,13 @@ function RenderImage(prop: PortfolioCardProps) {
             >
               {prop.subheading}
             </p>
-            <div className="w-10 xm:w-max">
-              {prop.skills.map((item, index) => {
-                return <SkillIcon skillName={item} key={index} />;
-              })}
-            </div>
+            {prop.skills.length > 0 && (
+              <div className="w-10 xm:w-max flex gap-4 bg-gray-400 rounded-xl p-2 place-content-center place-items-center">
+                {prop.skills.map((item, index) => {
+                  return <SkillIcon skillName={item} key={index} />;
+                })}
+              </div>
+            )}
           </div>
         </div>{" "}
       </AnimationOnScroll>

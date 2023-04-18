@@ -40,6 +40,26 @@ const skills = [
     src: "icons8-tailwindcss-96.png",
     text: "Tailwind CSS",
   },
+  {
+    skillName: "django",
+    src: "icons8-django-96.png",
+    text: "Django",
+  },
+  {
+    skillName: "next",
+    src: "icons8-nextjs-96.png",
+    text: "NextJS",
+  },
+  {
+    skillName: "postgresql",
+    src: "icons8-postgresql-96.png",
+    text: "PostgresSQL",
+  },
+  {
+    skillName: "aws",
+    src: "icons8-aws-96.png",
+    text: "AWS",
+  },
 ];
 
 export default function WorkSkill(prop: workSkillProps) {
@@ -53,7 +73,7 @@ export default function WorkSkill(prop: workSkillProps) {
 
   return (
     <li className="flex flex-col max-w-max items-center justify-self-center">
-      <img src={skillObject.src} alt="" className="w-12 lg:w-16 " />
+      <img src={skillObject.src} alt="" className="w-10 sm:w-12 " />
       {/* <p className="text-xs lg:text-xl ">{skillObject.text}</p> */}
     </li>
   );
