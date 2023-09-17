@@ -1,12 +1,13 @@
 import { Link } from "react-scroll";
 import NavbarLinkBtn from "./NavbarLinkBtn";
 import SocialIconBtn from "../SocialIconBtn";
-import NavbarPriBtn from "./NavbarPriBtn";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
-import { FaCloudMoon } from "react-icons/fa";
-import { FaCloudSun } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaCloudMoon,
+  FaCloudSun,
+} from "react-icons/fa";
 
 interface NavbarProps {
   handleDarkModeSwitch: Function;
@@ -51,14 +52,16 @@ function Navbar(prop: NavbarProps) {
           <NavbarLinkBtn linkTo="portfolio" />
         </ul>
 
-        <ul className="flex justify-end items-center 2xl:gap-2 3xl:gap-4">
+        <ul className="flex justify-end items-center md:gap-2 3xl:gap-4">
           <SocialIconBtn link="https://github.com/shinghao" icon={FaGithub} />
           <SocialIconBtn
             link="https://www.linkedin.com/in/sohshinghao"
             icon={FaLinkedin}
           />
-          <SocialIconBtn link="Resume_SohShingHao.pdf" icon={FaFileAlt} />
-          <NavbarPriBtn />
+          <SocialIconBtn
+            link="mailto:sohshinghao@gmail.com"
+            icon={FaEnvelope}
+          />
         </ul>
       </div>
     </nav>
