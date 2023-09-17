@@ -33,16 +33,6 @@ export default function Portfolio() {
       skills: ["unity", "c#"],
       isVideo: false,
     },
-    {
-      imgSrc: "portfolio-breakoutmonkey.gif",
-      imgAlt: "Image of breakout monkey game",
-      link: "https://drive.google.com/file/d/13ZtYS56-XJGNrk6ln4c5dQkOB__ZNQBj/view?usp=sharing",
-      heading: "Breakout Monkey",
-      subheading:
-        "Designed, developed & published a mobile endless runner game for android with Unity (3-man team) ",
-      skills: ["unity", "c#"],
-      isVideo: false,
-    },
   ];
 
   return (
