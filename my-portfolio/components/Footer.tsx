@@ -1,6 +1,4 @@
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import SocialIconBtn from "./SocialIconBtn";
 
 export default function Footer() {
@@ -13,14 +11,8 @@ export default function Footer() {
           link="https://www.linkedin.com/in/sohshinghao"
           icon={FaLinkedin}
         />
-        <SocialIconBtn link="Resume_SohShingHao.pdf" icon={FaFileAlt} />
+        <SocialIconBtn link="mailto:sohshinghao@gmail.com" icon={FaEnvelope} />
       </ul>
-      <a
-        href="mailto:sohshinghao@gmail.com"
-        className="pb-6 cursor-pointer hover:underline-offset-4 hover:underline decoration-1"
-      >
-        sohshinghao@gmail.com
-      </a>
       <p className="text-[1rem]">Designed & Built by Soh Shing Hao</p>
     </footer>
   );
