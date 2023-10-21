@@ -1,4 +1,4 @@
-import SkillCard from "@/components/about/SkillCard";
+import Skills from "./Skills";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function About() {
@@ -57,22 +57,7 @@ export default function About() {
           </AnimationOnScroll>
         </h3>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-          <ul className="grid grid-cols-3 gap-6 xm:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 sm:gap-6 lg:grid-flow-row lg:grid-rows-2 max-w-max m-auto ">
-            <SkillCard src="icons8-c++-96.png" text="C++" />
-            <SkillCard src="icons8-python-96.png" text="Python" />
-            <SkillCard src="icons8-java-96.png" text="Java" />
-            <SkillCard src="icons8-javascript-96.png" text="JavaScript" />
-            <SkillCard src="icons8-html-5-96.png" text="HTML" />
-            <SkillCard src="icons8-css3-96.png" text="CSS" />
-            <SkillCard src="icons8-react-native-96.png" text="React" />
-            <SkillCard src="icons8-nextjs-96.png" text="NextJS" />
-            <SkillCard src="icons8-django-96.png" text="Django" />
-            <SkillCard src="icons8-tailwindcss-96.png" text="Tailwindcss" />
-            <SkillCard src="icons8-postgresql-96.png" text="PostgresSQL" />
-            <SkillCard src="icons8-git-96.png" text="Git" />
-            <SkillCard src="icons8-unity-96.png" text="Unity" />
-            <SkillCard src="icons8-adobe-photoshop-96.png" text="Photoshop" />
-          </ul>
+          <Skills></Skills>
         </AnimationOnScroll>
       </div>
     </section>
