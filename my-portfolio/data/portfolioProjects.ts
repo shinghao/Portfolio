@@ -3,9 +3,8 @@ const portfolioProjectsData = [
     imgSrc: "project-where-to-binge.png",
     imgAlt: "Image of where-to-binge website",
     link: "https://where-to-binge.vercel.app/",
-    heading: "Where to Binge (WIP)",
-    subheading:
-      "Discover the best streaming options for your favorite content!",
+    heading: "Where to Binge",
+    subheading: "Search for the stream provider of a tv/movie",
     skills: ["react", "next", "tailwind", "django", "postgresql", "aws"],
     isVideo: false,
   },
@@ -14,8 +13,7 @@ const portfolioProjectsData = [
     imgAlt: "Image of findr website",
     link: "https://github.com/shinghao/findR",
     heading: "Price Comparison Shopping App",
-    subheading:
-      "Compare prices of searched item across various ecommerce platforms",
+    subheading: "Compare item prices across various ecommerce platforms",
     skills: ["react"],
     isVideo: false,
   },
@@ -25,7 +23,7 @@ const portfolioProjectsData = [
     link: "https://drive.google.com/file/d/1Frai_LPkpidQwv44x_XljvhJSYWAe4vy/view?usp=share_link",
     heading: "Lion City",
     subheading:
-      "Designed & developed a city-building game to increase awareness on the Total Defense pillars with Unity (5-man team) ",
+      "3D City-building mobile game to gamify Singapore's Total Defense Pillars",
     skills: ["unity", "c#"],
     isVideo: false,
   },
