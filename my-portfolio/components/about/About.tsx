@@ -50,8 +50,8 @@ export default function About() {
           <hr className="border-gray-300 dark:border-gray-500 h-px lg:col-span-2 lg:my-4"></hr>
         </div>
       </AnimationOnScroll>
-      <div>
-        <h3 className="m-12 text-center">
+      <div className="w-full flex flex-col items-center">
+        <h3 className="m-8 text-center">
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
             Technologies:
           </AnimationOnScroll>
