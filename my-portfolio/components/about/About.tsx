@@ -1,6 +1,5 @@
 import Skills from "./Skills";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import Image from "next/image";
 
 export default function About() {
   return (
@@ -26,12 +25,11 @@ export default function About() {
           
         "
           >
-            <Image
-              src="/shing-memoji-laptop.png"
+            <img
+              src="https://i.ibb.co/kxBMV3G/shing-memoji-laptop.png"
               alt="Avatar of boy using macbook"
-              className="rounded-full object-scale-down"
-              width={259}
-              height={354}
+              className="rounded-full object-scale-down
+            "
             />
           </div>
           <p
