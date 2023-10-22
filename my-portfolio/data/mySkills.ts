@@ -34,7 +34,7 @@ const skillsData = [
   },
   {
     src: "awslambda",
-    text: "AWS",
+    text: "AWS Lambda",
   },
   {
     src: "tailwindcss",
