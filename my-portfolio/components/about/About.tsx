@@ -51,7 +51,7 @@ export default function About() {
         </div>
       </AnimationOnScroll>
       <div>
-        <h3 className="text-2xl md:text-3xl lg:text-4xl m-12 text-center font-bold">
+        <h3 className="m-12 text-center">
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
             Technologies:
           </AnimationOnScroll>
