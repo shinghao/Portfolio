@@ -3,23 +3,23 @@ export default function Hero() {
     <section className="min-h-screen flex justify-center">
       <div
         className="grid grid-flow-row items-center justify-items-center content-center
-        gap-3 xm:gap-4 sm:gap-5 lg:gap-7 "
+        gap-3 xm:gap-4 sm:gap-5 lg:gap-6 2xl:gap-7 "
         id="hero"
       >
         <p
-          className="pt-hero-s sm:pt-hero text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold
+          className="pt-hero-s text-4xl lg:text-5xl 2xl:text-6xl font-bold
           animate__animated animate__slow animate__fadeIn"
         >
           Hi, I&apos;m
         </p>
         <h2
-          className="text-4xl xm:text-5xl sm:text-6xl lg:text-6xl font-bold
+          className="text-4xl 2xl:text-6xl lg:text-5xl font-bold
         animate__animated animate__fadeIn animate__slow animate__delay-1s"
         >
           Shing Hao
         </h2>
         <h3
-          className="text-xl xm:text-2xl sm:text-3xl
+          className="text-3xl 2xl:text-4xl
         animate__animated animate__fadeIn animate__slow animate__delay-2s"
         >
           Web // Software Developer
