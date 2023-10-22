@@ -25,6 +25,7 @@ export default function SkillCard(props: { src: string; text: string }) {
         alt={props.text}
         width={96}
         height={96}
+        quality={100}
       />
     </div>
   );
