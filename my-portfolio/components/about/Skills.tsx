@@ -1,4 +1,4 @@
-import skillsData from "@/data/skills";
+import skillsData from "@/data/mySkills";
 import SkillCard from "./SkillCard";
 
 export default function Skills() {
