@@ -1,7 +1,4 @@
-import HighlightedText from "./HighlightedText";
-import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import SkillCard from "../SkillCard";
 import workData from "@/data/work";
 import WorkCard from "./WorkCard";
 
