@@ -51,9 +51,9 @@ export default function Work() {
                 <HighlightedText text="Microsoft Hololens 2" />
               </li>
               <li>
-                Worked on
-                <HighlightedText text="web console" />
-                applications
+                Built the front-end of MRx, a
+                <HighlightedText text="web client" />
+                on Windows Store
               </li>
               <li>
                 Conducted regular
@@ -61,8 +61,8 @@ export default function Work() {
                 for clients
               </li>
               <li>
-                Hosted booth solo at Semicon 2022 in Penang, where I generated
-                business leads from international clients
+                Independently exhibited booth at SEMICON 2022 Penang, acquiring
+                new international business leads
               </li>
             </ul>
           </div>
