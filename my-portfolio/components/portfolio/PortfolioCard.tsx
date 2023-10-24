@@ -16,8 +16,7 @@ function RenderImage(prop: PortfolioCardProps) {
   return (
     <a
       href={prop.link}
-      className="bg-primary-bg-light dark:bg-primary-bg-dark dark:shadow-none relative group overflow-hidden md:w-11/12 lg:w-10/12 xl:w-3/5 max-w-max
-      "
+      className="bg-primary-bg-light dark:bg-primary-bg-dark dark:shadow-none relative group overflow-hidden max-w-2xl"
     >
       <AnimationOnScroll
         animateIn="animate__zoomIn"
@@ -25,7 +24,7 @@ function RenderImage(prop: PortfolioCardProps) {
         animateOnce
       >
         <img
-          className=" object-cover transform duration-700 backdrop-opacity-100"
+          className="object-cover transform duration-700 backdrop-opacity-100"
           src={prop.imgSrc}
           alt={prop.imgAlt}
         />
@@ -36,8 +35,7 @@ function RenderImage(prop: PortfolioCardProps) {
               className="capitalize  font-bold shadow-2xl text-white 
           mt-2 xm:mt-3 xsm:mt-5 sm:mt-6 md:mt-8 
           px-4 xsm:px-6 sm:px-8 lg:px-10
-          text-base xxm:text-lg xm:text-xl sm:text-2xl md:text-3xl
-          "
+          text-base xxm:text-lg xm:text-xl sm:text-2xl md:text-3xl"
             >
               {prop.heading}
             </h3>
@@ -49,12 +47,7 @@ function RenderImage(prop: PortfolioCardProps) {
                       lg:py-8  
                       mt-9 xm:mt-12 xsm:mt-14 sm:mt-16 md:mt-20 lg:mt-12"
           >
-            <p
-              className="leading-relaxed 
-          xxm:pb-2 sm:pb-4
-          text-base xxm:text-lg xm:text-xl sm:text-2xl md:text-3xl
-          "
-            >
+            <p className="leading-relaxed xxm:pb-2 sm:pb-4">
               {prop.subheading}
             </p>
             {prop.skills.length > 0 && (
@@ -73,46 +66,6 @@ function RenderImage(prop: PortfolioCardProps) {
   );
 }
 
-function RenderVideo(prop: PortfolioCardProps) {
-  return (
-    <div className="shadow-skills-card dark:shadow-none relative group overflow-hidden md:w-11/12 lg:w-10/12 xl:w-3/5 bg-primary-bg-dark text-primary-text-light">
-      <video
-        className=" object-cover transform duration-700 backdrop-opacity-100"
-        src={prop.imgSrc}
-        controls
-      />
-      <div
-        className="my-4
-          px-4 xsm:px-6 sm:px-8 lg:px-10
-          text-base xxm:text-lg xm:text-xl sm:text-2xl"
-      >
-        <h3
-          className="capitalize  font-bold shadow-2xl text-white 
-          
-          "
-        >
-          {prop.heading}
-        </h3>
-        <p
-          className="leading-relaxed 
-      "
-        >
-          {prop.subheading}
-        </p>
-        {prop.skills.length > 0 && (
-          <ul className="w-max flex gap-4 place-content-center place-items-center">
-            {prop.skills.map((skill, index) => (
-              <li key={index}>
-                <SkillCard skill={skill}></SkillCard>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </div>
-  );
-}
-
 export default function PortfolioCard(prop: PortfolioCardProps) {
-  return prop.isVideo ? RenderVideo(prop) : RenderImage(prop);
+  return RenderImage(prop);
 }
