@@ -13,7 +13,9 @@ export default function Footer() {
         />
         <SocialIconBtn link="mailto:sohshinghao@gmail.com" icon={FaEnvelope} />
       </ul>
-      <p className="text-[1rem]">Designed & Built by Soh Shing Hao</p>
+      <p className="text-[1rem] text-center">
+        Designed & Built 2023 by Soh Shing Hao
+      </p>
     </footer>
   );
 }
