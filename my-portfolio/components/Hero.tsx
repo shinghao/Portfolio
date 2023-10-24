@@ -19,7 +19,7 @@ export default function Hero() {
           Shing Hao
         </h2>
         <h3
-          className="text-3xl 2xl:text-4xl
+          className="text-3xl 2xl:text-4xl text-center
         animate__animated animate__fadeIn animate__slow animate__delay-2s"
         >
           Web // Software Developer
