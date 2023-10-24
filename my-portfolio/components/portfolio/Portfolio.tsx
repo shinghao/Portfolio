@@ -15,10 +15,7 @@ export default function Portfolio() {
       from-gray-300 to-gray-300 
       dark:from-gray-500 dark:to-gray-500 "
       >
-        <div
-          className="grid justify-items-center gap-20 lg:gap-32 2xl:gap-36
-      "
-        >
+        <div className="grid justify-items-center gap-20 lg:gap-32 2xl:gap-36">
           {portfolioProjectsData.map((item, index) => {
             return (
               <PortfolioCard
