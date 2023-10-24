@@ -1,5 +1,6 @@
 import Skills from "./Skills";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import SectionHeader from "../SectionHeader";
 
 export default function About() {
   return (
@@ -10,14 +11,12 @@ export default function About() {
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <div
           className="flex flex-col
-                  gap-y-8 xm:gap-y-10 sm:gap-y-12 md:gap-y-12 lg:gap-y-0
                   lg:grid lg:grid-cols-3"
         >
-          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center lg:w-max">
-            Nice to meet you!
-          </h2>
+          <SectionHeader>Nice to meet you!</SectionHeader>
           <div
             className="
+            mb-12 lg:mb-0
           self-center relative flex justify-center
           bg-gradient-to-b from-primary-btn-blue rounded-full 
           w-44 h-44 md:w-52 md:h-52 lg:w-[23vw] lg:h-[23vw] max-w-[300px] max-h-[300px]
@@ -34,7 +33,7 @@ export default function About() {
           </div>
           <p
             className="text-center sm:text-start
-                      lg:col-start-1 lg:col-span-2 lg:py-14"
+                      lg:col-start-1 lg:col-span-2 lg:pb-12"
           >
             Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with
             a passion for building impactful products. I love solving problems
