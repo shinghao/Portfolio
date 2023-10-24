@@ -6,10 +6,6 @@ interface IconBtnProps {
 }
 
 export default function SocialIconBtn(prop: IconBtnProps) {
-  const navIconBtnStyle = `
-  
-  `;
-
   return (
     <li>
       <div className="flex p-2 border-2 rounded-lg dark:hover:border-gray-400 border-transparent hover:border-gray-200 hover:bg-gray-100 dark:hover:bg-gray-500">
