@@ -18,6 +18,7 @@ const skillMap: { [key: string]: string } = {
   django: "Django",
   postgresql: "PostgresSQL",
   aws: "AWS",
+  nodejs: "NodeJS",
 };
 
 export default skillMap;
