@@ -13,8 +13,8 @@ const workData: Record<string, Work> = {
     date: "May 22 - Nov 22",
     content: [
       "Developed multiple end-to-end {{Mixed Reality}} applications for the {{Microsoft Hololens 2}}",
-      "Built the front-end of MRx, a {{web client}} on Windows Store",
-      "Conducted regular {{product demos}} for clients",
+      "Built the front-end of MRx, a {{Web Client}} on Windows Store",
+      "Conducted regular {{Product Demos}} for clients",
       "Independently exhibited booth at SEMICON 2022 Penang, acquiring new international business leads",
     ],
     skills: ["csharp", "unity", "angularjs", "javascript"],
@@ -26,7 +26,7 @@ const workData: Record<string, Work> = {
     content: [
       "Collaborated to enhance & develop the {{Singpass API Portal}}, a public facing shopfront for Singpass API products used by businesses & developers",
       "Integrated an external system into the portal, involving the development of new endpoints & a webhook",
-      "Successfully resolved numerous time-sensitive {{production issues}} & {{vulnerabilities}} raised by stakeholders",
+      "Successfully resolved numerous time-sensitive {{Production Issues}} & {{Vulnerabilities}} raised by stakeholders",
     ],
     skills: ["javascript", "typescript", "angularjs", "nodejs", "awslambda"],
   },
