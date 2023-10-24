@@ -1,7 +1,5 @@
-interface HighlightedTextProps {
-  text: string;
-}
-export default function HighlightedText(prop: HighlightedTextProps) {
-  const highlightedTextStyle = `font-bold text-primary-btn-blue`;
-  return <span className={highlightedTextStyle}>{" " + prop.text + " "}</span>;
+import React, { ReactNode } from "react";
+
+export default function HighlightedText({ children }: { children: ReactNode }) {
+  return <span className="font-bold text-primary-btn-blue">{children}</span>;
 }
