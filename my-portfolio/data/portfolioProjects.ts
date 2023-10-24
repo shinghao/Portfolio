@@ -5,7 +5,7 @@ const portfolioProjectsData = [
     link: "https://where-to-binge.vercel.app/",
     heading: "Where to Binge",
     subheading: "Search for the stream provider of a tv/movie",
-    skills: ["react", "next", "tailwind", "django", "postgresql", "aws"],
+    skills: ["react", "nextjs", "tailwindcss", "django", "postgresql", "aws"],
     isVideo: false,
   },
   {
@@ -14,7 +14,7 @@ const portfolioProjectsData = [
     link: "https://github.com/shinghao/findR",
     heading: "Price Comparison Shopping App",
     subheading: "Compare item prices across various ecommerce platforms",
-    skills: ["react"],
+    skills: ["react", "django", "postgresql"],
     isVideo: false,
   },
   {
@@ -24,7 +24,7 @@ const portfolioProjectsData = [
     heading: "Lion City",
     subheading:
       "3D City-building mobile game to gamify Singapore's Total Defense Pillars",
-    skills: ["unity", "c#"],
+    skills: ["unity", "csharp"],
     isVideo: false,
   },
 ];

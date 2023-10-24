@@ -2,8 +2,10 @@ import SkillIcon from "../SkillIcon";
 import HighlightedText from "./HighlightedText";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import SkillCard from "../SkillCard";
 
 export default function Work() {
+  const SERL_SKILL_LIST = ["csharp", "unity", "angularjs", "javascript"];
   return (
     <section className="m-auto w-10/12 5xl:w-9/12 py-20" id="work">
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
@@ -36,10 +38,7 @@ export default function Work() {
             <p className="lg:row-start-2 lg:text-xl">May 22 - Nov 22</p>
           </div>
 
-          <ul
-            className="mt-4 list-disc mx-6 lg:mx-12 space-y-3 
-        lg:row-start-3"
-          >
+          <ul className="my-4 list-disc mx-6 lg:mx-12 space-y-3 lg:row-start-3">
             <li>
               Developed multiple end-to-end
               <HighlightedText text="Mixed Reality" />
@@ -64,17 +63,12 @@ export default function Work() {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <ul
-          className="dark:bg-gray-400 rounded-xl grid grid-flow-col
-                      max-w-md lg:max-w-fit
-                      p-4 my-4 xl:my-0
-                      gap-2 lg:gap-4 "
-        >
-          <SkillIcon skillName="c#" />
-          <SkillIcon skillName="unity" />
-          <SkillIcon skillName="javascript" />
-          <SkillIcon skillName="html" />
-          <SkillIcon skillName="css" />
+        <ul className="mt-4 xl:mt-0 gap-4 max-w-max flex flex-wrap justify-center">
+          {SERL_SKILL_LIST.map((skill, index) => (
+            <li key={index}>
+              <SkillCard skill={skill}></SkillCard>
+            </li>
+          ))}
         </ul>
       </AnimationOnScroll>
     </section>

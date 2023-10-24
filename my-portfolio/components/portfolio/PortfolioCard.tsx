@@ -1,6 +1,6 @@
-import SkillIcon from "../SkillIcon";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import SkillCard from "../SkillCard";
 
 interface PortfolioCardProps {
   imgSrc: string;
@@ -58,11 +58,13 @@ function RenderImage(prop: PortfolioCardProps) {
               {prop.subheading}
             </p>
             {prop.skills.length > 0 && (
-              <div className="w-max flex gap-4 bg-gray-400 rounded-xl p-2 place-content-center place-items-center">
-                {prop.skills.map((item, index) => {
-                  return <SkillIcon skillName={item} key={index} />;
-                })}
-              </div>
+              <ul className="w-max flex gap-4 place-content-center place-items-center">
+                {prop.skills.map((skill, index) => (
+                  <li key={index}>
+                    <SkillCard skill={skill}></SkillCard>
+                  </li>
+                ))}
+              </ul>
             )}
           </div>
         </div>{" "}
@@ -97,11 +99,15 @@ function RenderVideo(prop: PortfolioCardProps) {
         >
           {prop.subheading}
         </p>
-        <div className="w-10 xm:w-max">
-          {prop.skills.map((item, index) => {
-            return <SkillIcon skillName={item} key={index} />;
-          })}
-        </div>
+        {prop.skills.length > 0 && (
+          <ul className="w-max flex gap-4 place-content-center place-items-center">
+            {prop.skills.map((skill, index) => (
+              <li key={index}>
+                <SkillCard skill={skill}></SkillCard>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
