@@ -10,7 +10,7 @@ const mySkillsData = [
   "awslambda",
   "tailwindcss",
   "html",
-  "css3",
+  "css",
   "git",
   "photoshop",
 ];
