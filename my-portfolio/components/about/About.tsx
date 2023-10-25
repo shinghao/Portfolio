@@ -33,7 +33,7 @@ export default function About() {
           </div>
           <p
             className="text-center sm:text-start
-                      lg:col-start-1 lg:col-span-2 lg:pb-12"
+                      lg:col-start-1 lg:col-span-2 pb-12"
           >
             Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with
             a passion for building impactful products. I love solving problems
