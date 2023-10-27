@@ -52,7 +52,7 @@ export default function About() {
       <div className="w-full flex flex-col items-center">
         <h3 className="m-8 text-center">
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-            Technologies:
+            Some technologies I currently work with:
           </AnimationOnScroll>
         </h3>
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
