@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { useState } from "react";
 import ToolTip from "./ToolTip";
 import skillMap from "@/data/skillMap";
+import SkillIcon from "./SkillIcon";
 
 export default function SkillCard(props: { skill: string }) {
   const [showTip, setShowTip] = useState(false);
@@ -21,14 +21,7 @@ export default function SkillCard(props: { skill: string }) {
       onMouseLeave={handleMouseLeave}
     >
       {showTip && <ToolTip text={skillText}></ToolTip>}
-      <Image
-        className="w-12 text-center"
-        src={`/icons8-${props.skill}-96.png`}
-        alt={skillText}
-        width={96}
-        height={96}
-        quality={100}
-      />
+      <SkillIcon src={props.skill} alt={skillText}></SkillIcon>
     </div>
   );
 }

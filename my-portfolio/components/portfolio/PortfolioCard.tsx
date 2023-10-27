@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import SkillCard from "../SkillCard";
+import SkillIcon from "../SkillIcon";
+import ToolTip from "../ToolTip";
 
 interface PortfolioCardProps {
   imgSrc: string;
@@ -42,25 +44,27 @@ function RenderImage(prop: PortfolioCardProps) {
           </div>
 
           <div
-            className=" absolute w-full flex flex-col justify-end text-primary-text-light opacity-0 group-hover:opacity-100 duration-100 ease-in-out
-                      px-4 xsm:px-6 sm:px-8 lg:px-10
-                      lg:py-8  
+            className="absolute w-full flex flex-col justify-end text-primary-text-light 
+                      opacity-0 group-hover:opacity-100 duration-100 ease-in-out
+                      px-4 xsm:px-6 sm:px-8 lg:px-10 lg:py-8  
                       mt-9 xm:mt-12 xsm:mt-14 sm:mt-16 md:mt-20 lg:mt-12"
           >
-            <p className="leading-relaxed xxm:pb-2 sm:pb-4">
-              {prop.subheading}
-            </p>
+            <p className="sm:pt-2">{prop.subheading}</p>
             {prop.skills.length > 0 && (
-              <ul className="w-max flex gap-4 place-content-center place-items-center">
+              <ul className="w-full flex gap-2 sm:gap-4 place-items-center place-content-start pt-2 sm:pt-6">
                 {prop.skills.map((skill, index) => (
-                  <li key={index}>
-                    <SkillCard skill={skill}></SkillCard>
+                  <li
+                    key={index}
+                    className="w-12 sm:w-14 md:w-16 aspect-square bg-slate-100 dark:bg-gray-400 p-2
+                    rounded-2xl sm:rounded-3xl grid items-center justify-items-center"
+                  >
+                    <SkillIcon src={skill} alt={skill}></SkillIcon>
                   </li>
                 ))}
               </ul>
             )}
           </div>
-        </div>{" "}
+        </div>
       </AnimationOnScroll>
     </a>
   );
