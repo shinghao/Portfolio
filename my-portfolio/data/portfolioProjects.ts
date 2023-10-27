@@ -14,7 +14,7 @@ const portfolioProjectsData = [
     link: "https://github.com/shinghao/findR",
     heading: "Price Comparison Shopping App",
     subheading: "Compare item prices across various ecommerce platforms",
-    skills: ["react", "django", "postgresql"],
+    skills: ["react", "django", "postgresql", "python"],
     isVideo: false,
   },
   {
@@ -22,9 +22,8 @@ const portfolioProjectsData = [
     imgAlt: "Image of lion city game",
     link: "https://drive.google.com/file/d/1Frai_LPkpidQwv44x_XljvhJSYWAe4vy/view?usp=share_link",
     heading: "Lion City",
-    subheading:
-      "3D City-building mobile game to gamify Singapore's Total Defense Pillars",
-    skills: ["unity", "csharp"],
+    subheading: "3D City-building mobile game to build your own Singapore",
+    skills: ["unity", "csharp", "photoshop"],
     isVideo: false,
   },
 ];
