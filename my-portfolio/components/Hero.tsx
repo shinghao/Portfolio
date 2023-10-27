@@ -22,7 +22,7 @@ export default function Hero() {
           className="text-3xl 2xl:text-4xl text-center
         animate__animated animate__fadeIn animate__slow animate__delay-2s"
         >
-          Web // Software Developer
+          Web // Software Engineer
         </h3>
         <a href="mailto:sohshinghao@gmail.com">
           <button
