@@ -36,9 +36,10 @@ export default function About() {
                       lg:col-start-1 lg:col-span-2 pb-12"
           >
             Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with
-            a passion for building impactful products. I love solving problems
-            and learning new technologies. <br /> <br /> I am currently seeking
-            internship opportunities in web and software development.&nbsp;
+            a passion for building impactful products. I love solving problems,
+            learning about new technologies and improving my craft. <br />
+            <br /> I am currently seeking internship opportunities in software
+            engineering.&nbsp;
             <a
               href="mailto:sohshinghao@gmail.com"
               className="bg-primary-blue underline font-semibold text-primary-btn-blue"
