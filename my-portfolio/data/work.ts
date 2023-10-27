@@ -7,6 +7,17 @@ type Work = {
 };
 
 const workData: Record<string, Work> = {
+  govtech: {
+    company: "Government Technology Agency",
+    jobTitle: "Full-Stack Software Engineer Intern",
+    date: "July 23 - Dec 23",
+    content: [
+      "Collaborated to enhance & develop the {{Singpass API Portal}}, a public facing shopfront for Singpass API products used by businesses & developers",
+      "Integrated an external system into the portal, involving the development of new endpoints & a webhook",
+      "Successfully resolved numerous time-sensitive {{Production Issues}} & {{Vulnerabilities}} raised by stakeholders",
+    ],
+    skills: ["javascript", "typescript", "angularjs", "nodejs", "awslambda"],
+  },
   serlio: {
     company: "Serl.io",
     jobTitle: "Software Developer",
@@ -18,17 +29,6 @@ const workData: Record<string, Work> = {
       "Independently exhibited booth at SEMICON 2022 Penang, acquiring new international business leads",
     ],
     skills: ["csharp", "unity", "angularjs", "javascript"],
-  },
-  govtech: {
-    company: "Government Technology Agency",
-    jobTitle: "Full-Stack Software Engineer Intern",
-    date: "July 23 - Dec 23",
-    content: [
-      "Collaborated to enhance & develop the {{Singpass API Portal}}, a public facing shopfront for Singpass API products used by businesses & developers",
-      "Integrated an external system into the portal, involving the development of new endpoints & a webhook",
-      "Successfully resolved numerous time-sensitive {{Production Issues}} & {{Vulnerabilities}} raised by stakeholders",
-    ],
-    skills: ["javascript", "typescript", "angularjs", "nodejs", "awslambda"],
   },
 };
 
