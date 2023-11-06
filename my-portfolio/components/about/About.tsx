@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader";
 export default function About() {
   return (
     <section
-      className="min-h-screen m-auto w-10/12 5xl:w-9/12 py-20"
+      className="min-h-screen m-auto w-10/12 3xl:w-[1200px] py-20"
       id="about"
     >
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>

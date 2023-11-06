@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader";
 
 export default function Work() {
   return (
-    <section className="m-auto w-10/12 5xl:w-9/12 py-20" id="work">
+    <section className="m-auto w-10/12 3xl:w-[1200px] py-20" id="work">
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <SectionHeader>Work Experience</SectionHeader>
       </AnimationOnScroll>
