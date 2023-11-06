@@ -30,19 +30,6 @@ function Navbar(prop: NavbarProps) {
           >
             <h1>Shing Hao</h1>
           </Link>
-          <button className="p-2 border-2 rounded-xl hover:border-gray-200 dark:hover:border-gray-400 border-transparent hover:bg-gray-100 dark:hover:bg-gray-500">
-            {prop.darkMode ? (
-              <FaSun
-                className="text-yellow-500 text-icon-button "
-                onClick={() => prop.handleDarkModeSwitch()}
-              ></FaSun>
-            ) : (
-              <FaMoon
-                className="text-icon-button "
-                onClick={() => prop.handleDarkModeSwitch()}
-              ></FaMoon>
-            )}
-          </button>
         </div>
 
         <ul className="m-auto justify-around w-full hidden navbar:flex">
@@ -61,6 +48,19 @@ function Navbar(prop: NavbarProps) {
             link="mailto:sohshinghao@gmail.com"
             icon={FaEnvelope}
           />
+          <button className="p-2 border-2 rounded-xl hover:border-gray-200 dark:hover:border-gray-400 border-transparent hover:bg-gray-100 dark:hover:bg-gray-500">
+            {prop.darkMode ? (
+              <FaSun
+                className="text-yellow-500 text-icon-button "
+                onClick={() => prop.handleDarkModeSwitch()}
+              ></FaSun>
+            ) : (
+              <FaMoon
+                className="text-icon-button "
+                onClick={() => prop.handleDarkModeSwitch()}
+              ></FaMoon>
+            )}
+          </button>
         </ul>
       </div>
     </nav>
