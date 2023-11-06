@@ -5,8 +5,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-  FaCloudMoon,
-  FaCloudSun,
+  FaMoon,
+  FaSun,
 } from "react-icons/fa";
 
 interface NavbarProps {
@@ -32,15 +32,15 @@ function Navbar(prop: NavbarProps) {
           </Link>
           <button className="p-2 border-2 rounded-xl hover:border-gray-200 dark:hover:border-gray-400 border-transparent hover:bg-gray-100 dark:hover:bg-gray-500">
             {prop.darkMode ? (
-              <FaCloudSun
+              <FaSun
                 className="text-yellow-500 text-icon-button "
                 onClick={() => prop.handleDarkModeSwitch()}
-              ></FaCloudSun>
+              ></FaSun>
             ) : (
-              <FaCloudMoon
+              <FaMoon
                 className="text-icon-button "
                 onClick={() => prop.handleDarkModeSwitch()}
-              ></FaCloudMoon>
+              ></FaMoon>
             )}
           </button>
         </div>
