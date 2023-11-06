@@ -18,7 +18,10 @@ function RenderImage(prop: PortfolioCardProps) {
   return (
     <a
       href={prop.link}
-      className="bg-primary-bg-light dark:bg-primary-bg-dark dark:shadow-none relative group overflow-hidden max-w-2xl"
+      className="bg-primary-bg-light dark:bg-primary-bg-dark 
+                  relative group overflow-hidden max-w-2xl
+                  dark:border dark:border-gray-500 border border-gray-200
+                  rounded-lg"
     >
       <AnimationOnScroll
         animateIn="animate__zoomIn"

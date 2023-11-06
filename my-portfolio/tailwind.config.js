@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       colors: {
         "primary-btn-blue": "#23B1C2",
-        "primary-text-dark": "rgb(75 85 99)",
+        "primary-text-dark": "#2D3748",
         "primary-text-light": "#F5F5Fa",
         "primary-bg-light": "#F5F5FA",
         "primary-bg-dark": "rgb(75 85 99)",
@@ -56,7 +56,6 @@ module.exports = {
         "btn-primary": "2.5rem",
       },
       boxShadow: {
-        "project-card": "0 20px 40px 0 rgb(0 0 0 / 45%)",
         "skills-card": "0 3px 8px #a17a69",
       },
     },
