@@ -28,12 +28,7 @@ function RenderImage(prop: PortfolioCardProps) {
         animateOut="animate__zoomOut"
         animateOnce
       >
-        <img
-          className="object-cover transform duration-700 backdrop-opacity-100"
-          src={prop.imgSrc}
-          alt={prop.imgAlt}
-        />
-        <div className="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+        <img src={prop.imgSrc} alt={prop.imgAlt} />
         <div className="absolute bg-black/80 from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
           <div className="absolute w-full flex">
             <h3
