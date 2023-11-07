@@ -23,12 +23,11 @@ function RenderImage(prop: PortfolioCardProps) {
     >
       <div
         className="bg-primary-bg-light dark:bg-primary-bg-dark 
-                   max-w-2xl
-                  dark:border dark:border-gray-500 border border-gray-200
-                  rounded-lg"
+                   max-w-2xl rounded-lg
+                  border dark:border-gray-500 border-gray-300"
       >
         <a href={prop.link}>
-          <img src={prop.imgSrc} alt={prop.imgAlt} />
+          <img src={prop.imgSrc} alt={prop.imgAlt} className="rounded-t-lg" />
         </a>
         <div className="w-full flex p-6 flex-col gap-3 ">
           <h3
@@ -38,12 +37,12 @@ function RenderImage(prop: PortfolioCardProps) {
             {prop.heading}
           </h3>
           <p>{prop.subheading}</p>
-          {prop.skills.length > 0 && (
+          {prop.skills?.length && (
             <ul className="flex gap-2 sm:gap-4 place-items-center place-content-start">
               {prop.skills.map((skill, index) => (
                 <li
                   key={index}
-                  className="w-12 sm:w-14 md:w-16 aspect-square bg-slate-100 dark:bg-gray-400 p-2
+                  className="w-12 sm:w-14 md:w-16 aspect-square shadow-skills-card dark:shadow-none dark:bg-gray-400 p-2
                     rounded-2xl sm:rounded-3xl grid items-center justify-items-center"
                 >
                   <SkillIcon src={skill} alt={skill}></SkillIcon>
