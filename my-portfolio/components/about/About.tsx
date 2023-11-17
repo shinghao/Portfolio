@@ -8,36 +8,39 @@ export default function About() {
       className="min-h-screen m-auto w-10/12 3xl:w-[1200px] py-20"
       id="about"
     >
-      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <div
-          className="flex flex-col
+      <div
+        className="flex flex-col
                   lg:grid lg:grid-cols-3"
-        >
+      >
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
           <SectionHeader>Nice to meet you!</SectionHeader>
-          <div
-            className="
-            mb-12 lg:mb-0
-          self-center relative flex justify-center
-          bg-gradient-to-b from-primary-btn-blue rounded-full 
-          w-44 h-44 md:w-52 md:h-52 lg:w-[23vw] lg:h-[23vw] max-w-[300px] max-h-[300px]
-          lg:col-start-3 lg:row-start-1 lg:row-span-2 lg:justify-self-center
-          
-        "
-          >
-            <img
-              src="https://i.ibb.co/kxBMV3G/shing-memoji-laptop.png"
-              alt="Avatar of boy using macbook"
-              className="rounded-full object-scale-down
+        </AnimationOnScroll>
+        <div className="self-center lg:col-start-3 lg:row-start-1 lg:row-span-2 lg:justify-self-center">
+          <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
+            <div
+              className="mb-12 lg:mb-0 relative flex justify-center
+                        bg-gradient-to-b from-primary-btn-blue rounded-full 
+                        w-44 h-44 md:w-52 md:h-52 lg:w-[23vw] lg:h-[23vw] max-w-[300px] max-h-[300px]"
+            >
+              <img
+                src="https://i.ibb.co/kxBMV3G/shing-memoji-laptop.png"
+                alt="Avatar of boy using macbook"
+                className="rounded-full object-scale-down
             "
-            />
-          </div>
-          <p
-            className="text-center sm:text-start
+              />
+            </div>
+          </AnimationOnScroll>
+        </div>
+        <p
+          className="text-center sm:text-start
                       lg:col-start-1 lg:col-span-2 pb-12"
-          >
+        >
+          <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
             Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with
             a passion for building impactful products. I love solving problems,
             learning about new technologies and improving my craft. <br />
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
             <br /> I am currently seeking internship opportunities in software
             engineering.&nbsp;
             <a
@@ -46,10 +49,11 @@ export default function About() {
             >
               Contact Me!
             </a>
-          </p>
-          <hr className="border-gray-300 dark:border-gray-500 h-px lg:col-span-2 lg:my-4"></hr>
-        </div>
-      </AnimationOnScroll>
+          </AnimationOnScroll>
+        </p>
+        <hr className="border-gray-300 dark:border-gray-500 h-px lg:col-span-2 lg:my-4"></hr>
+      </div>
+
       <div className="w-full flex flex-col items-center">
         <h3 className="m-8 text-center">
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
