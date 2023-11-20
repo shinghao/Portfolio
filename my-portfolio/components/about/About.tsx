@@ -1,6 +1,8 @@
 import Skills from "./Skills";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import SectionHeader from "../SectionHeader";
+import Image from "next/image";
+import myMemoji from "public/shing-memoji-laptop.png";
 
 export default function About() {
   return (
@@ -15,6 +17,7 @@ export default function About() {
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
           <SectionHeader>Nice to meet you!</SectionHeader>
         </AnimationOnScroll>
+
         <div className="self-center lg:col-start-3 lg:row-start-1 lg:row-span-2 lg:justify-self-center">
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
             <div
@@ -22,15 +25,15 @@ export default function About() {
                         bg-gradient-to-b from-primary-btn-blue rounded-full 
                         w-44 h-44 md:w-52 md:h-52 lg:w-[23vw] lg:h-[23vw] max-w-[300px] max-h-[300px]"
             >
-              <img
-                src="https://i.ibb.co/kxBMV3G/shing-memoji-laptop.png"
+              <Image
+                src={myMemoji}
                 alt="Avatar of boy using macbook"
-                className="rounded-full object-scale-down
-            "
+                className="rounded-full object-scale-down"
               />
             </div>
           </AnimationOnScroll>
         </div>
+
         <p
           className="text-center sm:text-start
                       lg:col-start-1 lg:col-span-2 pb-12"
