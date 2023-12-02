@@ -48,7 +48,7 @@ function Navbar(prop: NavbarProps) {
             link="mailto:sohshinghao@gmail.com"
             icon={FaEnvelope}
           />
-          <button className="p-2 border-2 rounded-xl hover:border-gray-200 dark:hover:border-gray-400 border-transparent hover:bg-gray-100 dark:hover:bg-gray-500">
+          <button className="p-2 border-2 rounded-xl hover:border-gray-400 dark:hover:border-gray-400 border-transparent hover:bg-gray-300 dark:hover:bg-gray-500">
             {prop.darkMode ? (
               <FaSun
                 className="text-yellow-500 text-icon-button "
