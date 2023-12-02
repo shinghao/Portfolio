@@ -25,7 +25,7 @@ export default function About() {
                         w-44 h-44 md:w-52 md:h-52 lg:w-[23vw] lg:h-[23vw] max-w-[300px] max-h-[300px]"
             >
               <Image
-                src={"/shing-memoji-laptop.png"}
+                src={"/shing-memoji-laptop.PNG"}
                 alt="Avatar of boy using macbook"
                 className="rounded-full object-scale-down"
                 width={259}
