@@ -35,26 +35,27 @@ export default function About() {
           </AnimationOnScroll>
         </div>
 
-        <p
+        <div
           className="text-center sm:text-start
                       lg:col-start-1 lg:col-span-2 pb-12"
         >
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-            Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate with
-            a passion for building impactful products. I love solving problems,
-            learning about new technologies and improving my craft. <br />
+            <p>
+              Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate
+              with a passion for building impactful products. I love solving
+              problems, learning about new technologies and improving my craft.{" "}
+              <br />
+              <br /> I am currently seeking internship opportunities in software
+              engineering.&nbsp;
+              <a
+                href="mailto:sohshinghao@gmail.com"
+                className="bg-primary-blue underline font-semibold text-primary-btn-blue"
+              >
+                Contact Me!
+              </a>
+            </p>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-            <br /> I am currently seeking internship opportunities in software
-            engineering.&nbsp;
-            <a
-              href="mailto:sohshinghao@gmail.com"
-              className="bg-primary-blue underline font-semibold text-primary-btn-blue"
-            >
-              Contact Me!
-            </a>
-          </AnimationOnScroll>
-        </p>
+        </div>
         <hr className="border-gray-300 dark:border-gray-500 h-px lg:col-span-2 lg:my-4"></hr>
       </div>
 
