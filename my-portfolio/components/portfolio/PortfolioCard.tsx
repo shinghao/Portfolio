@@ -1,8 +1,5 @@
-import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import SkillCard from "../SkillCard";
 import SkillIcon from "../SkillIcon";
-import ToolTip from "../ToolTip";
 
 interface PortfolioCardProps {
   imgSrc: string;
@@ -45,7 +42,7 @@ function RenderImage(prop: PortfolioCardProps) {
                   className="w-12 sm:w-14 md:w-16 aspect-square shadow-skills-card dark:shadow-none dark:bg-gray-400 p-2
                     rounded-2xl sm:rounded-3xl grid items-center justify-items-center"
                 >
-                  <SkillIcon src={skill} alt={skill}></SkillIcon>
+                  <SkillIcon skill={skill}></SkillIcon>
                 </li>
               ))}
             </ul>

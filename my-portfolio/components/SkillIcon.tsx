@@ -1,8 +1,10 @@
 import Image from "next/image";
 import ToolTip from "./ToolTip";
 import { useState } from "react";
+import skillMap from "@/data/skillMap";
 
-export default function SkillIcon(props: { src: string; alt: string }) {
+export default function SkillIcon(props: { skill: string }) {
+  const skillText = skillMap[props.skill];
   const [showTip, setShowTip] = useState(false);
   const handleMouseEnter = () => {
     setShowTip(true);
@@ -12,11 +14,11 @@ export default function SkillIcon(props: { src: string; alt: string }) {
   };
   return (
     <>
-      {showTip && <ToolTip text={props.alt}></ToolTip>}
+      {showTip && <ToolTip text={skillText}></ToolTip>}
       <Image
         className="w-12 text-center"
-        src={`/icons8-${props.src}-96.png`}
-        alt={props.alt}
+        src={`/icons8-${props.skill}-96.png`}
+        alt={skillText}
         width={96}
         height={96}
         quality={100}
