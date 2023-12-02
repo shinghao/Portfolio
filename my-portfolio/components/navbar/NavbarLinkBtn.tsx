@@ -6,7 +6,7 @@ interface HeaderLinkProps {
 
 export default function NavbarLinkBtn(prop: HeaderLinkProps) {
   return (
-    <li>
+    <li className="list-none">
       <Link
         to={prop.linkTo}
         spy={true}

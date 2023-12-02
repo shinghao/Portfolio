@@ -22,7 +22,7 @@ const renderContentWithHighlights = (content: string) => {
 
 export default function WorkCard(props: WorkCardProps) {
   return (
-    <div className="lg:grid">
+    <article className="lg:grid">
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <h3 className="lg:row-start-1">{props.company}</h3>
       </AnimationOnScroll>
@@ -51,6 +51,6 @@ export default function WorkCard(props: WorkCardProps) {
           </li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 }

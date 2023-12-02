@@ -16,7 +16,8 @@ interface NavbarProps {
 
 function Navbar(prop: NavbarProps) {
   return (
-    <nav
+    <header
+      role="banner"
       className="drop-shadow h-nav-bar-s sm:h-nav-bar fixed z-10  w-screen bg-primary-bg-light dark:bg-primary-bg-dark
     animate__animated animate__fadeInDownBig animate__delay-2s"
     >
@@ -32,11 +33,14 @@ function Navbar(prop: NavbarProps) {
           </Link>
         </div>
 
-        <ul className="m-auto justify-around w-full hidden navbar:flex">
+        <nav
+          role="navigation"
+          className="m-auto justify-around w-full hidden navbar:flex"
+        >
           <NavbarLinkBtn linkTo="about" />
           <NavbarLinkBtn linkTo="work" />
           <NavbarLinkBtn linkTo="portfolio" />
-        </ul>
+        </nav>
 
         <ul className="flex justify-end items-center md:gap-2 3xl:gap-4">
           <SocialIconBtn link="https://github.com/shinghao" icon={FaGithub} />
@@ -63,7 +67,7 @@ function Navbar(prop: NavbarProps) {
           </button>
         </ul>
       </div>
-    </nav>
+    </header>
   );
 }
 
