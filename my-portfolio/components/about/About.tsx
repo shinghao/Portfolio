@@ -2,7 +2,6 @@ import Skills from "./Skills";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import SectionHeader from "../SectionHeader";
 import Image from "next/image";
-import myMemoji from "public/shing-memoji-laptop.png";
 
 export default function About() {
   return (
@@ -26,9 +25,11 @@ export default function About() {
                         w-44 h-44 md:w-52 md:h-52 lg:w-[23vw] lg:h-[23vw] max-w-[300px] max-h-[300px]"
             >
               <Image
-                src={myMemoji}
+                src="/shing-memoji-laptop.png"
                 alt="Avatar of boy using macbook"
                 className="rounded-full object-scale-down"
+                width={259}
+                height={354}
               />
             </div>
           </AnimationOnScroll>
