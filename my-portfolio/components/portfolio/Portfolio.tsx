@@ -5,7 +5,7 @@ import portfolioProjectsData from "@/data/portfolioProjects";
 export default function Portfolio() {
   return (
     <section className=" m-auto mx-4 pt-20 " id="portfolio">
-      <h2 className="font-bold text-3xl md:text-4xl mb-2 lg:text-5xl text-center">
+      <h2 className="mb-2 text-center">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
           Project Highlights
         </AnimationOnScroll>

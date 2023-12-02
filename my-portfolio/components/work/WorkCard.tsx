@@ -24,15 +24,13 @@ export default function WorkCard(props: WorkCardProps) {
   return (
     <div className="lg:grid">
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold lg:row-start-1">
-          {props.company}
-        </h3>
+        <h3 className="lg:row-start-1">{props.company}</h3>
       </AnimationOnScroll>
 
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
         <div className="lg:flex lg:flex-row lg:items-center lg:justify-between lg:pr-8">
           <h4>{props.jobTitle}</h4>
-          <p className="lg:text-xl">{props.date}</p>
+          <p>{props.date}</p>
         </div>
       </AnimationOnScroll>
 

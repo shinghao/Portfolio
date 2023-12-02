@@ -9,10 +9,7 @@ export default function About() {
       className="min-h-screen m-auto w-10/12 3xl:w-[1200px] py-20"
       id="about"
     >
-      <div
-        className="flex flex-col
-                  lg:grid lg:grid-cols-3"
-      >
+      <div className="flex flex-col lg:grid lg:grid-cols-3">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
           <SectionHeader>Nice to meet you!</SectionHeader>
         </AnimationOnScroll>
