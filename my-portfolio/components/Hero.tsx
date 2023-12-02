@@ -2,8 +2,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex justify-center">
       <div
-        className="grid grid-flow-row items-center justify-items-center content-center
-        gap-3 xm:gap-4 sm:gap-5 lg:gap-6 2xl:gap-7 "
+        className="grid grid-flow-row items-center justify-items-center content-center gap-3"
         id="hero"
       >
         <p className="hero-heading pt-hero-s animate__animated animate__slow animate__fadeIn">
@@ -12,7 +11,7 @@ export default function Hero() {
         <h2 className="animate__animated animate__fadeIn animate__slow animate__delay-1s">
           Shing Hao
         </h2>
-        <h3 className="text-center animate__animated animate__fadeIn animate__slow animate__delay-2s">
+        <h3 className="text-center font-normal animate__animated animate__fadeIn animate__slow animate__delay-2s">
           Web // Software Engineer
         </h3>
         <a href="mailto:sohshinghao@gmail.com">
