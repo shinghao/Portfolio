@@ -7,30 +7,12 @@ import PortfolioSection from "@/components/portfolio/Portfolio";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
 import "animate.css/animate.min.css";
-import PacmanLoader from "react-spinners/PacmanLoader";
 
 export default function Home() {
-  const LOADTIME = 3000;
-
   const [darkMode, setDarkMode] = useState(true);
-  const [showPage, setShowPage] = useState(true);
-
-  useEffect(() => {
-    setInterval(() => {
-      setShowPage(true);
-    }, LOADTIME);
-  });
 
   const handleDarkModeSwitch = () => {
     setDarkMode(!darkMode);
-  };
-
-  const loader = () => {
-    return (
-      <div className="h-screen w-screen bg-primary-bg-dark flex justify-center items-center">
-        <PacmanLoader color="#36d7b7" />
-      </div>
-    );
   };
 
   return (
@@ -41,23 +23,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/shing-memoji-laptop.PNG" />
       </Head>
-      {!showPage && loader()}
-      {showPage && (
-        <main
-          className="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light
-         "
-        >
-          <Navbar
-            handleDarkModeSwitch={handleDarkModeSwitch}
-            darkMode={darkMode}
-          />
-          <HeroSection />
-          <AboutSection />
-          <WorkSection />
-          <PortfolioSection />
-          <Footer />
-        </main>
-      )}
+
+      <main className="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
+        <Navbar
+          handleDarkModeSwitch={handleDarkModeSwitch}
+          darkMode={darkMode}
+        />
+        <HeroSection />
+        <AboutSection />
+        <WorkSection />
+        <PortfolioSection />
+        <Footer />
+      </main>
     </div>
   );
 }
