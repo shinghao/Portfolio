@@ -38,11 +38,11 @@ export default function About() {
         >
           <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>
             <p>
-              Hi, I’m Soh Shing Hao, a year 3 Computer Science undergraduate
+              Hi, I’m Soh Shing Hao, a final year Computer Science undergraduate
               with a passion for building impactful products. I love solving
-              problems, learning about new technologies and improving my craft.{" "}
+              problems, learning about new technologies and improving my craft.
               <br />
-              <br /> I am currently seeking internship opportunities in software
+              <br /> I am currently seeking internship / full-time opportunities in software
               engineering.&nbsp;
               <a
                 href="mailto:sohshinghao@gmail.com"
